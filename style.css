@@ -104,6 +104,29 @@ footer {
     padding: 20px;
 }
 
+#hobbyInput{
+    margin-top: 15px;
+    width: 70%;
+}
+
+
+#hobbyList button{
+    margin-left: 10px;
+    padding: 5px 8px;
+    font-size: 12px;
+    background: #ef4444;
+}
+
+#hobbyList button:hover{
+    background: #dc2626;
+}
+
+#dateTime{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
