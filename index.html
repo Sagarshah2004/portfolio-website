@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    
+    <script src="Function.js"></script>
     <header>
         <h1>Sagar Kumar Sha</h1>
         <p class="tagline">Creative Web Developer & Problem Solver</p>
@@ -43,11 +43,25 @@
             Gaming improves my strategic thinking and quick decision-making, while cricket builds my fitness, teamwork, and discipline.
             Both hobbies teach me focus, patience, and the value of practice, and they also help me relax and enjoy time with friends.
         </p>
-        <ol>
-            <li>Improve strategic thinking and decision-making through planning in games and match situations in cricket</li>
-            <li>Build teamwork and communication skills when playing multiplayer games and team matches</li>
-            <li>Develop focus, patience, and discipline through regular practice and competition</li>
+                <ol id="hobbyList">
+            <li>
+                Improve strategic thinking and decision-making through planning in games and match situations in cricket
+                <button onclick="deleteItem(this)">Delete</button>
+            </li>
+            <li>
+                Build teamwork and communication skills when playing multiplayer games and team matches
+                <button onclick="deleteItem(this)">Delete</button>
+            </li>
+            <li>
+                Develop focus, patience, and discipline through regular practice and competition
+                <button onclick="deleteItem(this)">Delete</button>
+            </li>
         </ol>
+
+            <br>
+
+            <input type="text" id="hobbyInput" placeholder="Add new hobby benefit">
+            <button onclick="addHobby()">Add Benefit</button>
     </section>
 
     <section id="projects" class="container">
@@ -75,7 +89,7 @@
 
     <section id="contact" class="container">
         <h2>Contact Me</h2>
-        <form>
+        <form onsubmit="submitForm(event)">
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" rows="5" required></textarea>
@@ -88,6 +102,8 @@
         <p>Connect with me:</p>
         <a href="https://www.linkedin.com/in/sagar-shah-58ba89327/">LinkedIn</a> |
         <a href="https://github.com/Sagarshah2004">GitHub</a>
+
+        <p id="dateTime"></p>
     </footer>
 
 </body>
